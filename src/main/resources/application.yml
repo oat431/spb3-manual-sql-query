@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: experiment-manual-query
+  datasource:
+    url: jdbc:postgresql://localhost:5432/cometopima
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    database: postgresql
+    properties:
+      hibernate:
+        format_sql: true
+
+
+server:
+  port: 8080
+  error:
+    include-stacktrace: never
+    include-message: always
